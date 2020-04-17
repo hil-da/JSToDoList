@@ -1,0 +1,105 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Helvetica Neue', sans-serif;
+}
+
+/* ------------ container ------------ */
+
+.container {
+	width: 40em;
+	margin: 0 auto;
+	height: 100%;
+}
+
+/* ------------ header ------------ */
+.header {
+	height: 5em;
+	width: 45em;
+	margin-top: 20em;
+}
+.clear {
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	right: 30px;
+	top: 20px;
+}
+.clear i {
+	font-size: 30px;
+}
+.clear i:hover {
+	cursor: pointer;
+	text-shadow: 1px 3px 5px #000;
+	transform: rotate(45deg);
+}
+
+/* ------------ content ------------ */
+
+.item {
+	width: 40em;
+	height: 45px;
+	min-height: 45px;
+	position: relative;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	list-style: none;
+}
+.item i.complete {
+	position: absolute;
+	font-size: 25px;
+	padding-left: 5px;
+	left: 15px;
+	top: 10px;
+}
+.item i.complete:hover {
+	cursor: pointer;
+}
+.fa-check-circle {
+	color: #6eb200;
+}
+.item p.text {
+	position: absolute;
+	left: 60px;
+	top: 10px;
+	display: flex;
+	flex-wrap: wrap;
+	width: 34em;
+}
+.lineThrough {
+	text-decoration: line-through;
+	color: #ccc;
+}
+.item i.delete {
+	position: absolute;
+	font-size: 25px;
+	right: 15px;
+	top: 10px;
+}
+
+.item i.delete:hover {
+	color: #af0000;
+	cursor: pointer;
+}
+/* ------------ add item ------------ */
+.addItem {
+	position: relative;
+	width: 45em;
+	height: 40px;
+	background-color: #fff;
+	padding: 10px;
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+	align-items: center;
+}
+.addItem i {
+	position: absolute;
+	font-size: 40px;
+	background-color: #fff;
+}
+
+.addItem input {
+	border: none;
+	font-size: 15px;
+	height: 20px;
+	width: 52em;
+}
